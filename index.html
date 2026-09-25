@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#075c37">
+  <meta name="background-color" content="#075c37">
+  <meta name="description" content="Aplikasi Bendahara Pemuda Al-Jihad">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <title>Bendahara Pemuda Al-Jihad</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #075c37;
+    }
+    #app {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    id="app"
+    src="https://script.google.com/macros/s/AKfycbxj1u2hWaPVJhu9yeBdWtwLQwixUd5KMFca6VWI6paUqMrdqXJIXmfXl8ZlZEyd7bmo/exec"
+    title="Bendahara Pemuda Al-Jihad"
+    allow="clipboard-read; clipboard-write"
+    allowfullscreen>
+  </iframe>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js").catch(err => console.log("SW:", err));
+      });
+    }
+  </script>
+</body>
+</html>

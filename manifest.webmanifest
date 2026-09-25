@@ -1,0 +1,25 @@
+{
+  "name": "Bendahara Pemuda Al-Jihad",
+  "short_name": "Bendahara",
+  "description": "Aplikasi Bendahara Pemuda Al-Jihad",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#075c37",
+  "theme_color": "#075c37",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
